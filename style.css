@@ -35,15 +35,15 @@ body > .footer {
     font-size: 15px;
 }
 #button_about_me{
+    margin: 70px 70px; 
     width: 90px;
     height: 90px;
-    background: #31008b;
+    background: transparent;
     border-radius: 90%;
     border-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
-    -webkit-box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.21);
     box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.21);
     font-size: 1rem;
     color: #ffffff;
@@ -54,12 +54,17 @@ body > .footer {
     z-index: 5;
     transition: transform 1.25s ease-in-out;
     transform: rotate(360deg) scale(1.1);
-    -webkit-box-shadow: 2px 2px 13px 0px rgba(0, 0, 0, 0.21);
-    box-shadow: 2px 2px 13px 0px rgba(0, 0, 0, 0.21);
+    box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.21);
     }
 #button_about_me:not(:hover){
     transition: transform 1.25s ease-in-out;
     transform-origin: rotate(0deg) sclae(1);
-    -webkit-box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.21);
     box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.21);
+}
+#photo_presentation{
+    display: grid;
+    place-items: center;
+    width: 300px;
+    height: 370px;
+    border-radius: 100px;
 }
