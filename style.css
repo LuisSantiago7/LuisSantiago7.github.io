@@ -1,3 +1,15 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+main{
+    width: 100vw;
+    height: 100vw;
+}
 html, body {
     background: linear-gradient(-45deg, #9A72AC, #FF91A7, #FF5252, #00008B);
     background-size: 400% 400%;
@@ -21,11 +33,20 @@ body > .footer {
 }
 
 #presentation{
-    display: grid;
-    place-items: rigth;
+    justify-content: space-between;
     margin: 5px;
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
+}
+#presentation img{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    border-radius: 100px;
+}
+#presentation img:hover{
+    transform: scale(1.1);
+    transition: 1.25s ease;
 }
 #about_me{
     display: grid;
@@ -60,11 +81,4 @@ body > .footer {
     transition: transform 1.25s ease-in-out;
     transform-origin: rotate(0deg) sclae(1);
     box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.21);
-}
-#photo_presentation{
-    display: grid;
-    place-items: center;
-    width: 300px;
-    height: 370px;
-    border-radius: 100px;
 }
