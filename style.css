@@ -33,30 +33,40 @@ body > .footer {
 }
 
 #presentation{
-    justify-content: space-between;
-    margin: 5px;
+    margin-top: 250px;
+    margin-left: 250px;
+    padding-right: 0%;
+}
+#presentation p{
     font-family: 'Roboto', sans-serif;
-    font-size: 40px;
+    font-size: 45px;
 }
 #presentation img{
-    display: flex;
-    justify-content: space-between;
+    margin-right: 400px;
     width: 300px;
+    float: right;
     border-radius: 100px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.21);
 }
 #presentation img:hover{
     transform: scale(1.1);
     transition: 1.25s ease;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.21);
+
+}
+#presentation img:not(hover){
+    transform: scale(1);
+    transition: 1.25s ease;
 }
 #about_me{
-    display: grid;
-    place-items: rigth;
-    margin: 5px;
+    margin-left: 250px;
+    margin-top: 25px;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
 }
-#button_about_me{
-    margin: 70px 70px; 
+#about_me #button_about_me{
+    margin-top: 75px;
+    margin-bottom: 10px;
     width: 90px;
     height: 90px;
     background: transparent;
@@ -65,20 +75,23 @@ body > .footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.21);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.21) outset;
     font-size: 1rem;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
 }
-#button_about_me:hover{
+#about_me #button_about_me:hover{
     cursor: pointer;
     z-index: 5;
     transition: transform 1.25s ease-in-out;
     transform: rotate(360deg) scale(1.1);
-    box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.21);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.21);
     }
-#button_about_me:not(:hover){
+#about_me #button_about_me:not(:hover){
     transition: transform 1.25s ease-in-out;
     transform-origin: rotate(0deg) sclae(1);
-    box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.21);
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.21);
+}
+@media(min-width: 480px){
+    
 }
