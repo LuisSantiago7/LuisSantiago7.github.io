@@ -1,0 +1,68 @@
+html, body {
+    background: linear-gradient(-45deg, #9A72AC, #FF91A7, #FF5252, #00008B);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    }
+
+body > .header,
+body > .footer {
+    background: transparent;
+}
+@keyframes gradient {
+    0% {
+    background-position: 0% 50%;
+    }
+    50% {
+    background-position: 100% 50%;
+    }
+    100% {
+    background-position: 0% 50%;
+    }
+}
+
+#presentation{
+    display: grid;
+    place-items: rigth;
+    margin: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+#about_me{
+    display: grid;
+    place-items: rigth;
+    margin: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+#button_about_me{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}
+.menu{
+    position: relative;
+    width: 280px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu .toogle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 1.25s;
+    z-index: 5;
+}
+.menu.active .toogle{
+    transform: rotate(360deg);
+    box-shadow: 0 0 0 2px #333;
+}
