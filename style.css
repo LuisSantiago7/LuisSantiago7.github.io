@@ -106,7 +106,6 @@ main{
 }
 
 @media (min-width: 1024px){
-    }
     html, body {
         background: linear-gradient(-45deg, #9A72AC, #FF91A7, #FF5252, #00008B);
         background-size: 400% 400%;
