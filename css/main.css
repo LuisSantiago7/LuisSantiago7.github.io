@@ -169,7 +169,7 @@ body {
   width: 8vmin;
   height: 11vmin;
   border-radius: 51% 49% 47% 53%/44% 45% 55% 69%;
-  background-color: #f672b0;
+  background-color: rgb(255, 206, 0);
   background-image: linear-gradient(to top, #ee5286, #ee5286);
   transform-origin: bottom center;
   opacity: 0.9;
